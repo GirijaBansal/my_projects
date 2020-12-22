@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food ordering</title>
+    <style>
+        * {
+            overflow: auto;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        .a {
+            float: left;
+            filter: invert();
+
+        }
+
+        .b {
+            float: left;
+            position: relative;
+            left: 280px;
+            top: 30px;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin-right: 35px;
+
+        }
+
+        li a {
+            color: cornsilk;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .c {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+        .butn {
+            margin-right: 10px;
+        }
+
+        .d .g {
+            float: left;
+            width: 70%;
+        }
+
+        .d .h {
+            background-image: url("pexels-photo-1693626.jpeg");
+            float: left;
+            width: 30%;
+            height: 880px;
+            opacity: 0.5;
+        }
+
+        .f {
+            font-size: 40px;
+            font-weight: bolder;
+            margin-top: 40px;
+            text-align: center;
+            color: rgb(7, 0, 0);
+
+
+        }
+
+        .my {
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 40px;
+            font-size: 20px;
+
+        }
+
+        textarea {
+            width: 300px;
+            height: 120px;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #myy {
+            margin-left: 150px;
+            width: 100px;
+        }
+
+        .btn {
+            text-align: center;
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: bolder;
+            font-size: 10px;
+            border-radius: 6px;
+        }
+
+        input {
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        section {
+            width: 100%;
+            height: 300px;
+            background: url("menu.jpeg");
+            background-repeat: no-repeat;
+            background-size: 1600px 300px;
+            opacity: 0.7;
+        }
+
+        .y {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .z {
+            font-size: 40px;
+            padding-top: 40px;
+        }
+
+        .p {
+            margin-left: 500px;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .q {
+            font-size: 20px;
+        }
+
+        .m {
+            width: 100%;
+            height: 800px;
+            background-image: url("menu2.jpeg");
+            background-size: 1600px 800px;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        
+        .display {
+            display: flex;
+            height: 300px;
+        }
+
+        .display img {
+            margin-top: 60px;
+            justify-content: space-evenly;
+            width: 400px;
+            height: 200px;
+            filter: invert();
+        }
+        .yupp{
+            width: 1600px;
+            height: 300px;
+            background-color: black;
+            
+        }
+
+        .sponser {
+            color: floralwhite;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="a">
+            <img src="C:\Users\gullu\Pictures\finallogo.jpg" width="150px" height="90px">
+        </div>
+        <div class="b">
+            <ul>
+                <li><a href="link">Home</a></li>
+                <li><a href="link">About Us</a></li>
+                <li><a href="link">Services</a></li>
+                <li><a href="link">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="c">
+            <button class="butn">Phone number</button>
+            <button class="butn">Email id</button>
+        </div>
+    </header>
+    <div class="d">
+        <img class="g"
+            src="C:\Users\gullu\Downloads\tasty-breakfast-with-churro-and-lavender-dessert-in-cafe-4551618.jpg"
+            height="880px">
+        <div class="h">
+            <div class="f">Contact for any queries</div>
+            <form action="backend.php"></form>
+            <div class="my">
+                <br> Name: <br> <input text="ddd" placeholder="Enter your name"><br>
+            </div>
+            <div class="my">
+                <br> Email: <br> <input text="ddd" placeholder="Enter your email"><br>
+            </div>
+            <div class="my">
+                <br> Phone Number <br> <input text="ddd" placeholder="Enter your phone number"><br>
+            </div>
+            <div class="my">
+                <br> Message Us:<br><textarea>Your Message</textarea>
+            </div>
+            <div class="my" id="myy">
+                <br> <button class="btn">Submit Now</button>
+            </div>
+        </div>
+        <section>
+            <div class="y">
+                <div class="z">Welcome to Dignity Restaurant</div>
+                <div class="p">-Safe And Clean</div>
+                <div class="q">We provide our customers best we can and our online services serve as a best way to relay
+                    your stomach ease.It is completely hygenic and we provide meals at low prices.</div>
+                <div class="q">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime perspiciatis, magnam,
+                    iusto repellat soluta similique amet sunt eius suscipit corporis, illum explicabo quia ducimus
+                    excepturi ad. Incidunt molestias accusantium praesentium.</div>
+            </div>
+        </section>
+    <div class="yupp">
+        <div class="sponser">Our Sponsers</div>
+        <div class="display">
+            <img src="logo1.png">
+            <img src="logo2.png">
+            <img src="tata.jpg">
+            <img src="redif.jpg">
+            <img src="pepsi.jpg">
+        </div>
+    </div>
+    
+</body>
+
+</html>
