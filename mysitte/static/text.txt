@@ -1,0 +1,1 @@
+this is the text written by me and it is a static file it is the file which is available publicly

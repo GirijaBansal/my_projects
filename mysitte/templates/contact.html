@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}
+this is my contact
+{% endblock title %}
+{% block body %}
+<div class="container-fluid my-3">
+<img src="https://source.unsplash.com/1600x600/?icecream,vanila icecream" class="d-block w-100" alt="...">
+    </div>
+     <div class="container my-5">
+        <form method="post"action="/contact">
+            {% csrf_token %}
+            <h1 class="text-center">CONTACT US</h1>
+            <div class="form-group mb-3">
+                <label for="nam">Name</label>
+                <input type="text" class="form-control" id="nam" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group mb-3">
+                <label for="emai">Email address</label>
+                <input type="email" class="form-control" id="emai" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlInput1">Phone number</label>
+                <input type="phone" class="form-control" id="exampleFormControlInput1" name="phone" placeholder="Enter your phone number">
+            </div>
+<!--            <div class="form-group mb-3">-->
+<!--                <label for="exampleInputPassword1">Password</label>-->
+<!--                <input type="password" class="form-control" id="exampleInputPassword1">-->
+<!--              </div>-->
+<!--              <div class="form-group form-check mb-3">-->
+<!--                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--                <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--            <div class="form-group mb-3">-->
+<!--                <label for="exampleFormControlSelect1">your experience year</label>-->
+<!--                <select class="form-control" id="exampleFormControlSelect1">-->
+<!--                    <option>0</option>-->
+<!--                    <option>1</option>-->
+<!--                    <option>2</option>-->
+<!--                    <option>3</option>-->
+<!--                    <option>none</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="form-group mb-3">-->
+<!--                <label for="exampleFormControlSelect2">Select your choice</label>-->
+<!--                <select multiple class="form-control" id="exampleFormControlSelect2">-->
+<!--                    <option>web development</option>-->
+<!--                    <option>jQuery</option>-->
+<!--                    <option>Bootstrap</option>-->
+<!--                    <option>Only JavaScript</option>-->
+<!--                    <option>Media queries</option>-->
+<!--                </select>-->
+<!--            </div>-->
+            <div class="form-group mb-3">
+                <label for="example">Type your queries</label>
+                <textarea class="form-control" id="example"  name="desc" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+    </div>
+{% endblock body %}
